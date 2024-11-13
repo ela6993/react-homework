@@ -1,22 +1,17 @@
 import { useState } from "react"
 
 const Counter = function() {
-    const [count, setCount] = useState(0)
+    const [text, setText] = useState('')
 
-    function increment() {
-        setCount(count + 1)
-    }
-
-    function decrement() {
-        setCount(count - 1)
+    function handleText(event) {
+        setText(event.target.value)
     }
 
 
     return(
         <div>
-            <h1>{count}</h1>
-            <button onClick = {increment}>Increment</button>
-            <button onClick = {decrement}>Decrement</button>
+            <h1>{text}</h1>
+            <input type="text" value = {text} onChange={handleText}/>
         </div>
     )
 }

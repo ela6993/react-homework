@@ -1,0 +1,16 @@
+.App{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.root{
+    display: flex;
+    flex-direction: column;
+}
+.post{
+    margin: 5px;
+    padding: 5px;
+    background-color: yellow;
+}
